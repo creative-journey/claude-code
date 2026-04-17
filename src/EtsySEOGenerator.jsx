@@ -115,6 +115,7 @@ export default function EtsySEOGenerator() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
   const [dragOver, setDragOver] = useState(false);
+  const [streamText, setStreamText] = useState("");
   const fileRef = useRef();
 
   const handleFile = useCallback((file) => {
@@ -134,7 +135,7 @@ export default function EtsySEOGenerator() {
   };
 
   const generate = async () => {
-    setStep(2); setError(null);
+    setStep(2); setError(null); setStreamText("");
     try {
       const messages = [{ role: "user", content: [] }];
       if (image) {
@@ -150,11 +151,32 @@ export default function EtsySEOGenerator() {
           "anthropic-version": "2023-06-01",
           "anthropic-dangerous-direct-browser-access": "true",
         },
-        body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 1500, system: SYSTEM_PROMPT, messages })
+        body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 1500, stream: true, system: SYSTEM_PROMPT, messages })
       });
-      const data = await res.json();
-      const text = data.content?.map(b => b.text || "").join("").trim();
-      const clean = text.replace(/```json|```/g, "").trim();
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let accumulated = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        const chunk = decoder.decode(value, { stream: true });
+        for (const line of chunk.split("\n")) {
+          if (!line.startsWith("data: ")) continue;
+          const data = line.slice(6).trim();
+          if (data === "[DONE]") continue;
+          try {
+            const event = JSON.parse(data);
+            if (event.type === "content_block_delta" && event.delta?.type === "text_delta") {
+              accumulated += event.delta.text;
+              setStreamText(accumulated);
+            }
+          } catch {}
+        }
+      }
+
+      const clean = accumulated.replace(/```json|```/g, "").trim();
       const parsed = JSON.parse(clean);
       setResult(parsed);
       setStep(3);
@@ -337,11 +359,19 @@ export default function EtsySEOGenerator() {
 
         {/* Step 2: Generating */}
         {step === 2 && (
-          <div style={{ ...s.card, textAlign: "center", padding: "60px 28px" }}>
-            <div style={{ fontSize: 40, marginBottom: 20, animation: "spin 2s linear infinite", display: "inline-block" }}>✦</div>
+          <div style={{ ...s.card, padding: "40px 28px" }}>
             <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
-            <h2 style={{ ...s.h2, marginBottom: 10 }}>Claude is crafting your SEO</h2>
-            <p style={{ ...s.p, margin: 0 }}>Analyzing image · researching 2026 buyer intent · writing natural-language metadata…</p>
+            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+              <div style={{ fontSize: 24, animation: "spin 2s linear infinite", display: "inline-block", flexShrink: 0 }}>✦</div>
+              <h2 style={{ ...s.h2, margin: 0, fontSize: 18 }}>Claude is crafting your SEO…</h2>
+            </div>
+            {streamText ? (
+              <div style={{ ...s.resultBox, fontSize: 12, maxHeight: 320, overflowY: "auto", whiteSpace: "pre-wrap", wordBreak: "break-word", lineHeight: 1.6, color: "#78716c" }}>
+                {streamText}
+              </div>
+            ) : (
+              <p style={{ ...s.p, margin: 0 }}>Analyzing · researching buyer intent · writing metadata…</p>
+            )}
           </div>
         )}
 
