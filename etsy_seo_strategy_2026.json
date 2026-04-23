@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "title": "Etsy SEO Strategy Guide 2026",
+    "compiled_date": "2026-04-23",
+    "sources": [
+      "dylanjahraus.com",
+      "metadatareactor.com",
+      "listing-forge.com",
+      "marmalead.com",
+      "gelato.com",
+      "voolist.com",
+      "merchtitans.com",
+      "printify.com",
+      "erank.com",
+      "etsy.com/seller-handbook"
+    ],
+    "note": "Dylan Jahraus course (courses.dylanjahraus.com) and YouTube channel are behind login/bot-block walls. Data compiled from Dylan's public blog, public SEO guides, and Etsy's official seller handbook."
+  },
+
+  "dylan_jahraus_specific_strategies": {
+    "background": "Dylan Jahraus is a $1.8M+ Etsy seller whose shop ranks in the top 0.1% worldwide, reaching $1M+ in sales in 5 years.",
+    "core_philosophy": "Show up in as many search results as possible using as many unique long-tail keywords as possible — prioritise functional SEO over pretty titles.",
+    "key_strategies": [
+      {
+        "name": "Customer-Centric Title Approach",
+        "description": "The #1 SEO mistake is writing titles that describe the product itself rather than its purpose or utility for the customer. Shoppers search for solutions, not specs.",
+        "example": "Bad: 'Blue Ceramic Mug 12oz' | Good: 'Gift for Coffee Lover, Funny Morning Mug, Housewarming Gift for Her'"
+      },
+      {
+        "name": "General-to-Specific Keyword Order",
+        "description": "Customers search general to specific (e.g. 'wedding dress boho lace'). Lead with nouns, follow with descriptive keywords. Match the natural search order buyers use.",
+        "example": "Start with 'Personalized Leather Wallet' not 'Wallet Leather Personalized Engraved'"
+      },
+      {
+        "name": "Unique SEO Per Listing",
+        "description": "Every listing must have completely unique SEO. Never copy-paste the same title across listings — it limits you to one set of search terms for every product.",
+        "action": "Write distinct long-tail keyword combinations for each individual listing"
+      },
+      {
+        "name": "Mine Etsy Stats for Hidden Keywords",
+        "description": "Go to Shop Manager → Stats → sort listings by revenue → click high-earning products → scroll to 'Search Terms'. Look for terms that generated 20+ visits but are NOT currently in your title/tags. These are high-intent, converting phrases to add immediately.",
+        "action": "Check stats weekly and update listings with newly discovered converting search terms"
+      },
+      {
+        "name": "Never Change a Bestseller's SEO",
+        "description": "Do not edit the title or tags of a top-performing listing. Duplicate it first, test new keywords on the copy, then decide whether to swap.",
+        "action": "Duplicate listing → test SEO → monitor for 2–4 weeks before applying to original"
+      },
+      {
+        "name": "3 Daily Listing Hacks",
+        "description": "Dylan recommends a daily routine: (1) Refresh a listing's first photo, (2) update one listing's title with a newly discovered long-tail keyword, (3) add or renew a listing to trigger recency boost.",
+        "action": "Spend 15–30 minutes daily on these three actions"
+      },
+      {
+        "name": "Organic Growth Without Ads",
+        "description": "Dylan generates $50,000+/month organically. The lever is SEO breadth — covering hundreds of long-tail search phrases across many listings rather than running paid ads on a few listings."
+      }
+    ]
+  },
+
+  "character_limits": {
+    "listing_title": {
+      "max_characters": 140,
+      "recommended_characters": "70 or under (Etsy now soft-caps at 70 — exceeding this may be flagged as keyword stuffed)",
+      "visible_in_search_mobile": "first 45–55 characters",
+      "visible_in_search_desktop": "first 55–65 characters",
+      "algorithm_weight_zone": "first 30–40 characters (highest relevancy weight)"
+    },
+    "tags": {
+      "max_tags": 13,
+      "max_characters_per_tag": 20,
+      "recommended_words_per_tag": "2–4 words"
+    },
+    "description": {
+      "max_characters": 10000,
+      "recommended_minimum": 1000,
+      "critical_zone": "first 160 characters (used as meta description in Etsy and Google search results)"
+    },
+    "shop_title": {
+      "max_characters": 55
+    }
+  },
+
+  "titles": {
+    "formula": "[Primary Keyword Phrase] + [Attribute/Style] + [Occasion or Audience]",
+    "rules": [
+      "Put your single most important keyword phrase in the FIRST 30–40 characters",
+      "Use natural, conversational language — write how buyers actually search",
+      "Use long-tail phrases (3–5 words) not single generic words",
+      "Separate distinct keyword phrases with commas for readability and algorithmic clarity",
+      "Do NOT repeat the same keyword multiple times (keyword stuffing penalised since 2025–2026 update)",
+      "Keep total length to 70 characters or fewer if possible",
+      "Match the natural search order: general noun first, then descriptors",
+      "Include at least one occasion or use-case phrase (e.g. 'Gift for Mom', 'Birthday Gift', 'Office Decor')"
+    ],
+    "dos": [
+      "Front-load primary keyword: 'Macrame Wall Hanging – Boho Home Decor – Nursery Gift'",
+      "Use buyer language: 'pretty rings for mom birthday' not 'artisan floral silver band'",
+      "Include material, size, or style when relevant: 'Sterling Silver', 'Large', 'Minimalist'",
+      "Include gifting occasion when applicable: 'Housewarming Gift', 'Wedding Gift', 'Teacher Gift'"
+    ],
+    "donts": [
+      "Do NOT start with brand name or shop name",
+      "Do NOT stuff random keywords: 'Mug Cup Coffee Tea Drink Gift Women Men Birthday'",
+      "Do NOT repeat the same word twice in the title",
+      "Do NOT put your best keyword in the middle or end of the title",
+      "Do NOT write titles only from the product spec perspective"
+    ],
+    "real_examples": [
+      {
+        "good": "Personalized Leather Wallet, Engraved Gift for Men, Anniversary Gift for Husband",
+        "bad": "Wallet Leather Personalized Brown Custom Engraved Men's Bifold Slim Card Holder"
+      },
+      {
+        "good": "Minimalist Gold Necklace for Everyday Wear, Dainty Layering Necklace, Gift for Her",
+        "bad": "Necklace Gold Minimalist Dainty Layering Jewelry Women Girls Ladies Chain"
+      },
+      {
+        "good": "Macrame Wall Hanging, Boho Home Decor, Large Woven Wall Art for Living Room",
+        "bad": "Wall Hanging Macrame Art Boho Woven Home Decor Large Bedroom Living Room"
+      }
+    ]
+  },
+
+  "tags": {
+    "rules": [
+      "Always use ALL 13 tag slots — unused slots are lost search surface",
+      "Each tag must be a multi-word phrase (2–4 words) — single-word tags are too broad to rank for",
+      "Do NOT repeat a phrase already in your title — Etsy already indexes titles",
+      "Do NOT repeat a phrase covered by your chosen category or attributes",
+      "Do NOT use the same root keyword in multiple tags unless paired with very different modifiers",
+      "Use synonyms and variations: if title says 'necklace', tags can include 'pendant', 'choker', 'chain necklace'",
+      "Include occasion-based tags: 'birthday gift', 'anniversary present', 'housewarming gift', 'mothers day gift'",
+      "Include recipient-based tags: 'gift for her', 'gift for mom', 'gift for boyfriend'",
+      "Include style-based tags: 'boho style', 'minimalist aesthetic', 'cottagecore decor'",
+      "Mix broad and specific: some broad category tags + several specific long-tail tags"
+    ],
+    "tag_categories_to_cover": [
+      "Product type / what it is (if not in title exact form)",
+      "Material or medium",
+      "Style or aesthetic",
+      "Color (if relevant)",
+      "Size or format",
+      "Occasion",
+      "Recipient",
+      "Use-case / where it goes",
+      "Synonyms for the product",
+      "Long-tail buyer intent phrases"
+    ],
+    "strategy": {
+      "broad_vs_specific": "Mix 3–4 broader category tags with 8–10 specific long-tail tags. Broad = traffic entry; specific = conversion intent.",
+      "dont_waste_slots_on": [
+        "Single words ('ring', 'mug', 'art')",
+        "Duplicating category selections",
+        "Duplicating exact title phrases",
+        "Competitor names or brand terms"
+      ]
+    },
+    "example_tags_for_personalized_necklace": [
+      "custom name necklace",
+      "personalized jewelry gift",
+      "dainty gold necklace",
+      "birthday gift for her",
+      "layering necklace women",
+      "initial necklace gold",
+      "gift for best friend",
+      "minimalist jewelry set",
+      "mothers day necklace",
+      "bride jewelry gift",
+      "sterling silver pendant",
+      "custom gift for wife",
+      "meaningful jewelry gift"
+    ]
+  },
+
+  "descriptions": {
+    "seo_role": "Etsy has confirmed listing descriptions are NOT indexed for Etsy search ranking. Their primary job is to convert a buyer who already clicked — not to rank.",
+    "google_seo_role": "Descriptions ARE indexed by Google. Include natural keyword usage to capture Google Shopping and organic search traffic.",
+    "structure": {
+      "characters_1_to_160": "Hook — most compelling benefit or feature. This is your meta description on both Etsy and Google. Make it specific and enticing.",
+      "characters_161_to_500": "Product details: materials, dimensions, colors available, customization options",
+      "characters_500_to_1000": "How to use it, who it's for, gifting context",
+      "characters_1000_plus": "Care instructions, processing/shipping time, shop policies, FAQ, keywords woven in naturally"
+    },
+    "rules": [
+      "Write the first 160 characters as if it's an ad — it shows in search previews",
+      "Do NOT open with your shop name or 'Welcome to my shop'",
+      "Use secondary and long-tail keywords naturally throughout — don't force them",
+      "Answer the top 3 buyer objections before they ask",
+      "Include dimensions, materials, and customization details clearly",
+      "Mention gifting potential with specific occasions",
+      "Include processing time and shipping estimate",
+      "Write for humans first, keywords second"
+    ],
+    "example_opening_160_chars": "Personalized leather wallet hand-stamped with any name or date — the perfect groomsmen gift, Father's Day gift, or anniversary present for him.",
+    "dos": [
+      "Front-load your most important product benefit",
+      "Use bullet points for specs for easy scanning",
+      "Mention the item name + primary keyword in the first sentence",
+      "Include occasion keywords naturally: 'perfect birthday gift for dog lovers'"
+    ],
+    "donts": [
+      "Don't start with 'Welcome' or your shop name",
+      "Don't keyword-stuff — it reads poorly and doesn't help ranking",
+      "Don't leave the first 160 characters generic or vague",
+      "Don't write a wall of text with no line breaks"
+    ]
+  },
+
+  "keyword_research": {
+    "free_methods": [
+      {
+        "method": "Etsy Search Bar Autocomplete",
+        "description": "Type your product keyword into Etsy search and note every autocomplete suggestion — these are real recent buyer searches.",
+        "tip": "Try typing each letter of the alphabet after your keyword to surface more suggestions"
+      },
+      {
+        "method": "Etsy Stats → Search Terms",
+        "description": "In Shop Manager → Stats, click each listing and view 'Search Terms' — reveals exact phrases buyers used to find you.",
+        "tip": "Dylan Jahraus method: find terms with 20+ visits not yet in your title/tags and add them immediately"
+      },
+      {
+        "method": "Google Trends",
+        "description": "Use Google Trends to find rising product and gift trends before they peak, then validate with Etsy tools.",
+        "tip": "Filter by 'Shopping' category for Etsy-relevant trend data"
+      },
+      {
+        "method": "Competitor Listing Analysis",
+        "description": "Study top-ranking competitor listings in your niche — note their title structure, tag choices, and attribute selections."
+      }
+    ],
+    "paid_tools": [
+      {
+        "tool": "eRank",
+        "pricing": "Free plan (200 keyword lookups/day), Basic $5.99/mo, Pro $9.99/mo, Expert $29.99/mo",
+        "best_for": "Listing audits, keyword competition scoring, trend tracking, identifying missing tags"
+      },
+      {
+        "tool": "Marmalead",
+        "pricing": "$19/month (no free plan)",
+        "best_for": "Keyword brainstorming with 'Storm' tool, volume tracking, competition visualization"
+      },
+      {
+        "tool": "EtsyHunt",
+        "pricing": "Generous free tier",
+        "best_for": "Largest database of Etsy products, competitor analysis, market gap identification, keyword competition level"
+      }
+    ]
+  },
+
+  "algorithm_ranking_factors": {
+    "stage_1_relevancy_matching": {
+      "description": "Etsy scans your listing to decide if it matches the search query",
+      "signals": [
+        "Listing title (highest weight, especially first 40 chars)",
+        "Tags (all 13 slots)",
+        "Category and subcategory selection",
+        "Attributes (color, size, material, occasion, etc.)",
+        "Description (light context, not a primary signal)"
+      ]
+    },
+    "stage_2_quality_ranking": {
+      "description": "Among matched listings, Etsy ranks by predicted likelihood to convert",
+      "signals": [
+        {
+          "factor": "Listing Quality Score",
+          "weight": "Very High",
+          "description": "Based on clicks, favorites, dwell time, and purchases from search"
+        },
+        {
+          "factor": "Conversion Rate",
+          "weight": "Very High",
+          "description": "Higher conversion rate = higher ranking. Good CTR is 2–5%; top listings hit 8–10%+"
+        },
+        {
+          "factor": "Shipping Price",
+          "weight": "High (new in 2026)",
+          "description": "February 2026 update made shipping a direct ranking factor. Free shipping to US gets a measurable boost. High shipping costs penalise ranking."
+        },
+        {
+          "factor": "Dwell Time",
+          "weight": "Medium-High (new in 2026)",
+          "description": "How long a buyer stays on your listing page after clicking. Longer dwell time signals high-quality, relevant content."
+        },
+        {
+          "factor": "Click-Through Rate (CTR)",
+          "weight": "High",
+          "description": "Determined by your first photo and title. Higher CTR from search boosts ranking."
+        },
+        {
+          "factor": "Shop Quality Score",
+          "weight": "Medium",
+          "description": "Reviews rating, response rate, shipping time accuracy. Poor shop scores suppress listing rankings."
+        },
+        {
+          "factor": "Recency",
+          "weight": "Low-Medium",
+          "description": "Newly listed or renewed listings get a temporary recency boost. Use renewals strategically."
+        },
+        {
+          "factor": "Video Content",
+          "weight": "Low-Medium (new in 2026)",
+          "description": "Listings with video get a small but measurable ranking uplift, especially in categories where video is uncommon."
+        }
+      ]
+    },
+    "semantic_search_2025_2026": {
+      "description": "Etsy's algorithm now matches buyer intent even without exact keyword matches. A search for 'pretty rings for mom birthday' may surface listings tagged 'mother birthday jewelry' or 'floral ring gift mom'.",
+      "implication": "Natural, intent-based language in titles and tags now outperforms exact keyword stuffing."
+    }
+  },
+
+  "photos_and_media": {
+    "first_photo_rules": [
+      "High-contrast, scroll-stopping image — determines CTR from search",
+      "Show the product clearly and immediately — no ambiguity",
+      "Include at least one lifestyle photo showing product in real-world use",
+      "White or clean background for main photo in most categories",
+      "Use keyword-relevant image file names before uploading (e.g. 'personalized-leather-wallet-gift-for-men.jpg')"
+    ],
+    "video": {
+      "recommendation": "Add a 15-second video showing product in use",
+      "impact": "Small but measurable ranking uplift in 2026, especially in competitive categories where most sellers don't have video",
+      "tip": "Even a simple phone video of the product from multiple angles or showing personalisation process is sufficient"
+    },
+    "total_photos": "Use all 10 photo slots. Etsy favours fully completed listings."
+  },
+
+  "attributes_and_categories": {
+    "rules": [
+      "Select the most specific subcategory available — don't stop at a top-level category",
+      "Fill out every relevant attribute field (color, size, material, occasion, style)",
+      "Attribute selections act as additional relevancy signals (like extra tags)",
+      "Correct category unlocks more attribute options — choose carefully",
+      "Do NOT add a tag that duplicates an attribute you've already selected"
+    ],
+    "impact": "Filling all attributes can add 5–10 additional relevancy signals equivalent to extra tags."
+  },
+
+  "common_mistakes_to_avoid": [
+    "Copying the same title/tags across multiple listings",
+    "Using single-word tags",
+    "Leaving tag slots empty",
+    "Putting primary keyword in the middle or end of the title",
+    "Keyword stuffing (now penalised by Etsy's 2025–2026 algorithm)",
+    "Ignoring Etsy Stats search term data",
+    "Editing a top-performing listing's SEO directly (duplicate and test instead)",
+    "Starting description with 'Welcome to my shop'",
+    "High shipping costs (now a direct ranking penalty since Feb 2026)",
+    "Skipping attributes fields",
+    "Using the exact same phrase in both title and tags",
+    "Targeting only high-competition broad keywords instead of long-tail phrases"
+  ],
+
+  "action_plan": {
+    "for_new_listings": [
+      "Research 3–5 long-tail keyword phrases using Etsy autocomplete + eRank",
+      "Write title: primary keyword first (first 40 chars), then 2–3 descriptors/occasions",
+      "Select specific category and fill ALL attribute fields",
+      "Write 13 unique multi-word tags covering synonyms, occasions, recipients, styles",
+      "Write first 160 chars of description as a compelling hook",
+      "Use all 10 photo slots; add video if possible",
+      "Offer free shipping if margins allow"
+    ],
+    "for_existing_listings": [
+      "Open Etsy Stats → check Search Terms for each listing",
+      "Find terms with 20+ visits not in current title/tags — add immediately",
+      "Audit tags: remove single-word tags, remove duplicates of title/categories",
+      "Update first photo to maximise CTR",
+      "Check category and attribute completeness",
+      "For bestsellers: duplicate first, test on copy, never edit original directly"
+    ],
+    "daily_routine_dylan_jahraus": [
+      "Refresh first photo on one listing",
+      "Update one listing title with newly discovered long-tail keyword",
+      "Renew or add one listing for recency boost"
+    ]
+  }
+}
